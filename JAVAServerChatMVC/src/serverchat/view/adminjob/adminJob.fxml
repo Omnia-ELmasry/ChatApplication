@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="208.0" prefWidth="540.0" styleClass="mainFxmlClass" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serverchat.view.adminjob.AdminJobController">
+   <children>
+      <JFXToggleButton fx:id="toggleButton" layoutX="72.0" layoutY="48.0" onAction="#toggleButtonHandler" text="off" />
+      <Button fx:id="userAddButton" layoutX="22.0" layoutY="144.0" mnemonicParsing="false" onAction="#userAddButtonHandler" styleClass="green" stylesheets="@css.css" text="User Add" />
+      <Button fx:id="announceBtn" disable="true" layoutX="100.0" layoutY="144.0" mnemonicParsing="false" onAction="#sendAnnounce" styleClass="green" stylesheets="@css.css" text="Send Announcement" />
+      <Button fx:id="statisticsButton" layoutX="246.0" layoutY="144.0" mnemonicParsing="false" onAction="#statisticsButtonHandler" styleClass="green" stylesheets="@css.css" text="Statistics" />
+      <Button fx:id="usersInfoButton" layoutX="327.0" layoutY="144.0" mnemonicParsing="false" onAction="#usersInfoButtonHandler" styleClass="green" stylesheets="@css.css" text="Users Info" />
+      <Button fx:id="logOutButton" layoutX="450.0" layoutY="144.0" mnemonicParsing="false" onAction="#logOutButtonHandler" styleClass="green" stylesheets="@css.css" text="Log Out" />
+   </children>
+</AnchorPane>

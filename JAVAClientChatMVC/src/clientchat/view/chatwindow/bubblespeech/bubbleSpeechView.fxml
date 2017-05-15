@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Text?>
+
+<Group xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientchat.view.chatwindow.bubblespeech.BubbleSpeechController">
+   <children>
+      <ImageView fx:id="imgView" fitHeight="34.0" fitWidth="40.0" layoutX="3.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/user.png" />
+         </image></ImageView>
+      <Ellipse fx:id="bbl2" fill="WHITE" layoutX="43.0" layoutY="38.0" radiusX="6.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="bbl1" fill="WHITE" layoutX="61.0" layoutY="31.0" radiusX="12.0" radiusY="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="txtFlow" layoutX="78.0" layoutY="11.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 30; -fx-background-radius: 30;" wrapText="true">
+         <graphic>
+            <Text fx:id="txtNode" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic>
+         <padding>
+            <Insets bottom="4.0" left="17.0" right="17.0" top="4.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="6.0" layoutY="50.0" />
+   </children>
+</Group>

@@ -1,0 +1,43 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.anchor {
+    -fx-background-color: #3399ff;
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-padding: 10;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+    .bitmap { 
+  -fx-border: 30px solid transparent;
+  -fx-padding: 20px;
+ -fx-border-image: url("https://mdn.mozillademos.org/files/4127/border.png") ;
+}
+    
+.font{
+    -fx-background-image:url("/clientchat/resources/colorp.png");
+    -fx-background-color:#395306;
+    
+}
+.font1{
+    
+ 
+   -fx-color: blue;
+ 
+}
+.color{
+-fx-background-image:url("/clientchat/resources/color.png" );
+}
+.area{
+    -fx-background-color:transparent;
+    -fx-background-image:url("/clientchat/resources/chatwall2.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:stretch;
+}
+.list-cell
+{
+    -fx-background-color: transparent;
+}

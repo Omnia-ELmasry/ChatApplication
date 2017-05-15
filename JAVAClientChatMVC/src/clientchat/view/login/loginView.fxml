@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="360.0" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientchat.view.login.LoginViewController">
+   <stylesheets>
+        <URL value="@Login.css" />
+    </stylesheets>
+    <children>
+      <JFXTextField fx:id="userName" focusColor="#833d07" layoutX="65.0" layoutY="162.0" maxWidth="249.0" minWidth="199.0" prefHeight="50.0" prefWidth="228.0" promptText="   UserName" styleClass="textField" stylesheets="@Login.css" unFocusColor="SEAGREEN">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="8.0" left="32.0" top="10.0" />
+         </padding>
+      </JFXTextField>
+      
+      <JFXPasswordField fx:id="password" focusColor="#723507" layoutX="65.0" layoutY="250.0" maxWidth="228.0" minWidth="207.0" prefHeight="31.0" prefWidth="228.0" promptText="    Password" styleClass="textField2" stylesheets="@Login.css" unFocusColor="SEAGREEN">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="8.0" left="32.0" top="10.0" />
+         </padding>
+      </JFXPasswordField>
+      <JFXTextField fx:id="ipAddress" focusColor="#723507" layoutX="65.0" layoutY="322.0" maxWidth="228.0" minWidth="186.0" prefHeight="31.0" prefWidth="228.0" promptText="     IP Address" styleClass="textField3" stylesheets="@Login.css" text="127.0.0.1" unFocusColor="SEAGREEN">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="8.0" left="32.0" top="10.0" />
+         </padding>
+      </JFXTextField>
+      <JFXButton fx:id="loginBtn" layoutX="69.0" layoutY="408.0" onAction="#userLogin" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #2e8b57; -fx-text-fill: white;" styleClass="connectBtn" text="Login">
+         <effect>
+            <Reflection fraction="0.4" />
+         </effect></JFXButton>
+      <JFXButton fx:id="signupBtn" layoutX="206.0" layoutY="408.0" onAction="#userSignup" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: #2e8b57; -fx-text-fill: white;" text="Sign Up">
+         <effect>
+            <Reflection fraction="0.38" />
+         </effect></JFXButton>
+      <ImageView fitHeight="129.0" fitWidth="126.0" layoutX="109.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="msg1" layoutX="78.0" layoutY="469.0" prefHeight="17.0" prefWidth="244.0" stylesheets="@Login.css" textFill="#da0909" />
+      <Label fx:id="msg3" layoutX="79.0" layoutY="375.0" prefHeight="17.0" prefWidth="236.0" textFill="#da0909" />
+   </children>
+   <styleClass>
+      <String fx:value="CloseBtn" />
+      <String fx:value="connectBtn" />
+      <String fx:value="mainFxmlClass" />
+   </styleClass>
+</AnchorPane>

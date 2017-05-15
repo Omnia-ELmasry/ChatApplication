@@ -1,0 +1,140 @@
+
+body{
+    /*background-color: lightblue;*/
+    font-family: "Ubuntu-Italic", "Lucida Sans", "helvetica", "sans";
+    background: url('http://forums.crackberry.com/attachments/blackberry-10-wallpapers-f308/137432d1361639896t-z10-wallpaper-set-z10-music.jpg');
+    background-image: url("chatBg.jpg");
+}
+
+/* container */
+.container {
+    padding: 5% 5%;
+}
+.talk-bubble {
+    margin: 40px;
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height: auto;
+    background-color: lightyellow;
+
+}
+.border{
+    border: 8px solid #666;
+}
+.round{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+.tri-right.border.btm-left-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+    right: auto;
+    top: auto;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 transparent transparent #666;
+/*    &.alt{
+        right: -2px;      
+        bottom: 40px;
+        left: auto;
+    }*/
+ color: #fff;
+}
+.tri-right.btm-left-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 38px;
+    right: auto;
+    top: auto;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: lightyellow transparent transparent lightyellow;
+    
+
+}
+.talktext{
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+.talktext p{
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+
+}
+
+.timestamp{
+    font-size: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    text-transform: uppercase; color: #999
+}
+
+.tri-right.border.btm-right-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 30px;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 38px;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: lightyellow lightyellow transparent transparent;
+}
+
+ .bubble:before {
+  position: absolute;
+  top: 19px;
+  display: block;
+  width: 8px;
+  height: 6px;
+  content: '\00a0';
+  -moz-transform: rotate(29deg) skew(-35deg);
+  -ms-transform: rotate(29deg) skew(-35deg);
+  -webkit-transform: rotate(29deg) skew(-35deg);
+  transform: rotate(29deg) skew(-35deg);
+}
+.bubble.you {
+  float: left;
+  color: #fff;
+  background-color: #eceff1;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -moz-animation-name: slideFromLeft;
+  -webkit-animation-name: slideFromLeft;
+  animation-name: slideFromLeft;
+}
+
+
+
+/*.speech-bubble:after {
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 20px;
+   border-top: 20px solid black;
+   border-top-color: inherit; 
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent; 
+}*/

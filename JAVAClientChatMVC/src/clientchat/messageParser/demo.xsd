@@ -1,0 +1,25 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified">
+    <xs:element name="MyMsg" type="MsgsType"/>
+	<xs:element name="Header" type="xs:string"/>
+	<xs:element name="Msg" type="MsgType" />
+	
+	<xs:element name="from" type="xs:string" />
+	<xs:element name="to" type="xs:string" />
+	<xs:element name="date" type="xs:string" />
+	<xs:element name="body" type="xs:string" />
+	<xs:complexType name="MsgType">
+		<xs:sequence>
+			<xs:element ref="from" />
+			<xs:element ref="to" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element ref="date" />
+			<xs:element ref="body" />
+		</xs:sequence>
+	</xs:complexType>	
+    <xs:complexType name="MsgsType">
+        <xs:sequence>
+            <xs:element ref="Header"/>
+            <xs:element ref="Msg" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

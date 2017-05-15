@@ -1,0 +1,99 @@
+
+
+.CloseBtn:pressed {
+    -fx-opacity: 0.2;
+}
+
+
+
+
+.connectBtn{
+    -fx-color: #FBFCFC ;
+    -fx-padding: 5px 20px;
+    -fx-background-color: linear-gradient(to bottom, #ffe49e 0%,#ffb700 3%,#ffad00 35%,#ff9000 97%,#e27f00 100%);
+    -fx-font-family: 'Open Sans', sans-serif;
+    -fx-font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    -fx-opacity: 1;
+}
+
+
+.connectBtn:pressed{
+    -fx-opacity: 1;
+    -fx-padding: 5px 20px;
+    -fx-spacing: 10px;
+    -fx-start-margin: 10px;
+    -fx-background-color: linear-gradient(to bottom, #ffe49e 0%,#ffb700 3%,#ffad00 35%,#ff9000 97%,#e27f00 100%);
+    -fx-font-family: 'Open Sans', sans-serif;
+    -fx-cursor: hand;
+}
+
+.textField {
+  -fx-background-image:url("/clientchat/resources/useLog.png" );
+  -fx-background-size:30px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: left center;
+  -fx-font-size: 16;
+  -fx-font-weight: bold;
+}
+
+.textField2 {
+  -fx-background-image:url("/clientchat/resources/password.png" );
+  -fx-background-size:30px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: left center;
+  -fx-font-size: 16;
+  -fx-font-weight: bold;
+}
+
+
+
+.textField4{
+  -fx-background-image:url("/clientchat/resources/email.png" );
+  -fx-background-size:30px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: left center;
+  -fx-font-size: 16;
+  -fx-font-weight: bold;
+}
+
+.textField5{
+  -fx-background-image:url("/clientchat/resources/user.png" );
+  -fx-background-size:30px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: left center;
+  -fx-font-size: 16;
+  -fx-font-weight: bold;
+}
+
+.textField6{
+  -fx-background-image:url("/clientchat/resources/password2.png" );
+  -fx-background-size:30px;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: left center;
+  -fx-font-size: 16;
+  -fx-font-weight: bold;
+}
+.mainFxmlClass {
+    -fx-background-image : url("/serverchat/view/adminjob/newBg.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+}
+
+.green {
+    -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+/*.rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}*/

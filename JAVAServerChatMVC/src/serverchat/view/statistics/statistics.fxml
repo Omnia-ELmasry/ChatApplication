@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serverchat.view.statistics.StatisticsController">
+   <children>
+      <BarChart fx:id="barChart" layoutX="68.0" layoutY="212.0" prefHeight="425.0" prefWidth="310.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="212.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="pieChart" layoutX="201.0" prefHeight="220.0" prefWidth="224.0" />
+      <BarChart fx:id="barChartUser" layoutX="329.0" layoutY="212.0" prefHeight="450.0" prefWidth="310.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Label layoutX="14.0" layoutY="21.0" text="Online :" />
+      <Label layoutX="14.0" layoutY="55.0" text="Offline :" />
+      <Label fx:id="onlineLabel" layoutX="66.0" layoutY="21.0" />
+      <Label fx:id="offlineLabel" layoutX="66.0" layoutY="55.0" />
+   </children>
+</AnchorPane>

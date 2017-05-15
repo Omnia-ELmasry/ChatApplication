@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='Message.xsl'?>
+<!DOCTYPE msgRoot SYSTEM 'MsgOutput.dtd'>
+<msgRoot>
+    <header>Msg Header</header>
+    <msgElement>
+        <body>
+            <content>fdsfdffddddddddddd</content>
+            <date>6 Feb 2017 11:59:29 GMT</date>
+            <from>me</from>
+        </body>
+        <body>
+            <content>dddddddddddddd</content>
+            <date>6 Feb 2017 11:59:31 GMT</date>
+            <from>me</from>
+        </body>
+        <body>
+            <content>dddddvvvvvvvvvvvvv</content>
+            <date>6 Feb 2017 11:59:35 GMT</date>
+            <from>yousef says :&lt;br&gt;</from>
+        </body>
+        <to>To XYZ</to>
+    </msgElement>
+</msgRoot>

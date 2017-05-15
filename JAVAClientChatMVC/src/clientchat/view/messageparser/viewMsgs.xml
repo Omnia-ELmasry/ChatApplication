@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='Message.xsl'?>
+<msgRoot>
+    <header>TO X</header>
+    <msgElementList>
+        <bodyList>
+            <content>jfkdsjfldksjfkljsdfkljsdfkljsdlfkjdlk hkjhjkhkjhk</content>
+            <date>2017</date>
+            <from>me</from>
+        </bodyList>
+        <to>TO X</to>
+    </msgElementList>
+</msgRoot>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/MsgOutput.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE msgRoot SYSTEM "MsgOutput.dtd">
+
+    <msgRoot>
+    ...
+    </msgRoot>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT msgRoot (header|msgElement)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT header (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT msgElement (body|to)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT body (content|date|from)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT content (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT date (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT from (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT to (#PCDATA)>
